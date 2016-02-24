@@ -3,6 +3,6 @@
 
 int main(int argc, int *argv[])
 {
-	printf("Ola, mundo!");
+	printf("Ola, %s!", $argv[1]);
 	return 0;
 }
