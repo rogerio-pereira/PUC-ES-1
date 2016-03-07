@@ -1,8 +1,13 @@
-#include <stdio.h>
-#include <stdlib.h>
+#include<stdio.h>
+#include<stdlib.h>
 
-int main(int argc, int *argv[])
+int main(int argc, char *argv[])
 {
-	printf("Ola, %s!", $argv[1]);
+	char argumento[30];
+	
+	/* o valor padrão é Mundo */
+	strcpy(argumento, argc > 2 ? argv[1]:"Mundo");
+	printf("ola, %s !", argumento);
+	
 	return 0;
 }
